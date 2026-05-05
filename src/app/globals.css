@@ -1622,6 +1622,17 @@ body {
     flex: 1;
 }
 
+.about-text-content p {
+    color: #444;
+}
+
+.about-right .cta-button-gold {
+    width: auto;
+    display: inline-flex;
+    padding: 15px 40px;
+    margin-top: 10px;
+}
+
 .about-image-container {
     position: relative;
     width: 100%;

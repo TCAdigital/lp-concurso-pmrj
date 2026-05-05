@@ -7,6 +7,11 @@ export default function Page() {
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
   const [isStickyVisible, setIsStickyVisible] = useState(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   useEffect(() => {
     // Reveal Observer
@@ -517,35 +522,37 @@ export default function Page() {
                             <div className="content-block">
                                 <h2 className="block-title light-text">DÚVIDAS FREQUENTES</h2>
                                 <div className="faq-premium-grid">
-                                    <div className="faq-premium-card">
-                                        <div className="faq-q">
-                                            <span>O curso é atualizado?</span>
-                                            <div className="faq-icon">+</div>
+                                    {[
+                                        { q: "O curso é atualizado?", a: "Sim, todas as aulas são focadas no pré-edital 2026 e atualizadas conforme novas diretrizes." },
+                                        { q: "Por quanto tempo tenho acesso?", a: "Seu acesso é vitalício até o dia da prova do concurso PMERJ 2026." },
+                                        { q: "Posso parcelar no boleto?", a: "O parcelamento é feito via cartão de crédito em até 12x. À vista aceitamos PIX e Boleto." }
+                                    ].map((faq, idx) => (
+                                        <div 
+                                            key={idx} 
+                                            className="faq-premium-card" 
+                                            onClick={() => toggleFaq(idx)}
+                                            style={{ cursor: "pointer" }}
+                                        >
+                                            <div className="faq-q">
+                                                <span>{faq.q}</span>
+                                                <div className="faq-icon" style={{ transform: openFaq === idx ? "rotate(45deg)" : "rotate(0deg)", transition: "transform 0.3s" }}>+</div>
+                                            </div>
+                                            <div 
+                                                className="faq-a" 
+                                                style={{ 
+                                                    maxHeight: openFaq === idx ? "500px" : "0", 
+                                                    overflow: "hidden", 
+                                                    transition: "all 0.3s ease",
+                                                    marginTop: openFaq === idx ? "15px" : "0",
+                                                    paddingTop: openFaq === idx ? "15px" : "0",
+                                                    borderTop: openFaq === idx ? "1px solid rgba(0,0,0,0.05)" : "none",
+                                                    opacity: openFaq === idx ? 1 : 0
+                                                }}
+                                            >
+                                                <p style={{ margin: 0 }}>{faq.a}</p>
+                                            </div>
                                         </div>
-                                        <div className="faq-a">
-                                            <p>Sim, todas as aulas são focadas no pré-edital 2026 e atualizadas conforme novas diretrizes.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="faq-premium-card">
-                                        <div className="faq-q">
-                                            <span>Por quanto tempo tenho acesso?</span>
-                                            <div className="faq-icon">+</div>
-                                        </div>
-                                        <div className="faq-a">
-                                            <p>Seu acesso é vitalício até o dia da prova do concurso PMERJ 2026.</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="faq-premium-card">
-                                        <div className="faq-q">
-                                            <span>Posso parcelar no boleto?</span>
-                                            <div className="faq-icon">+</div>
-                                        </div>
-                                        <div className="faq-a">
-                                            <p>O parcelamento é feito via cartão de crédito em até 12x. À vista aceitamos PIX e Boleto.</p>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
