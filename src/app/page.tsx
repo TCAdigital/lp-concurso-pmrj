@@ -603,6 +603,20 @@ export default function Page() {
                     <div className="about-left">
                         <div className="about-image-container">
                             <img src="./assets/praticar-equipe.png" alt="Equipe Praticar Online" style={{"width":"100%","borderRadius":"20px","boxShadow":"0 20px 40px rgba(0,0,0,0.1)"}}/>
+                            <div className="about-floating-card card-1" style={{"position":"absolute","bottom":"30px","left":"-30px","background":"#0A1F2F","color":"#fff","padding":"15px 20px","borderRadius":"10px","boxShadow":"0 10px 30px rgba(0,0,0,0.2)","zIndex":2,"borderLeft":"4px solid var(--gold)","display":"flex","alignItems":"center","gap":"15px"}}>
+                                <div style={{"fontSize":"24px"}}>🏆</div>
+                                <div>
+                                    <strong style={{"display":"block","fontSize":"16px","color":"var(--gold)"}}>Líder de Mercado</strong>
+                                    <span style={{"fontSize":"12px","opacity":0.8}}>+16 anos de história</span>
+                                </div>
+                            </div>
+                            <div className="about-floating-card card-2" style={{"position":"absolute","top":"40px","right":"-30px","background":"#fff","color":"#000","padding":"15px 20px","borderRadius":"10px","boxShadow":"0 10px 30px rgba(0,0,0,0.1)","zIndex":2,"display":"flex","alignItems":"center","gap":"15px"}}>
+                                <div style={{"background":"rgba(212,175,55,0.2)","color":"var(--gold)","width":"40px","height":"40px","borderRadius":"50%","display":"flex","alignItems":"center","justifyContent":"center","fontWeight":900}}>+15k</div>
+                                <div>
+                                    <strong style={{"display":"block","fontSize":"16px"}}>Aprovados</strong>
+                                    <span style={{"fontSize":"12px","color":"#666"}}>Na PMERJ e Forças Armadas</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="about-right">

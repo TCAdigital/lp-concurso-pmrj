@@ -241,7 +241,7 @@ body {
     display: block; /* Mudado de flex para block para evitar centralização automática */
     position: relative;
     background-color: #050a12; /* Cor que casa com o fundo da imagem */
-    background-image: url('assets/hero_final_bg.jpg');
+    background-image: url('/assets/hero_final_bg.jpg');
     background-repeat: no-repeat;
     background-size: auto 100%; /* Mantém a altura real sem distorcer a largura */
     background-position: right center;
@@ -666,9 +666,7 @@ body {
     padding: 80px;
     position: relative;
 }
-    padding: 40px 10px;
-    border: 1px solid var(--border);
-}
+
 
 /* SPLIT LAYOUT SYSTEM */
 .split-layout-section {
@@ -1607,8 +1605,28 @@ body {
 
 
 /* ============================================================
-   ABOUT US FLOATING CARDS (Updated via Antigravity)
+   ABOUT US DESKTOP FIX
    ============================================================ */
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-left {
+    flex: 1;
+    position: relative;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-image-container {
+    position: relative;
+    width: 100%;
+}
+
 /* ============================================================
    FAQ PREMIUM CARDS
    ============================================================ */
@@ -1774,7 +1792,7 @@ body {
     /* APLICAÇÃO DIRETA DO FUNDO NO ATO 1 */
     .dark-zone { 
         background-color: #050f1a !important; 
-        background-image: url('./assets/fundo-vaga.png') !important;
+        background-image: url('/assets/fundo-vaga.png') !important;
         background-size: cover;
         background-position: center;
         margin: 0 -20px; /* Compensa o padding do container para preencher a tela */
