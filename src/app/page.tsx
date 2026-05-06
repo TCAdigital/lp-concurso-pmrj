@@ -257,6 +257,7 @@ export default function Page() {
                                 <span className="btn-sub">INVESTA NO SEU FUTURO. MUDE SUA HISTÓRIA.</span>
                             </div>
                         </a>
+                    </div>
                     <div className="slider-dots">
                         {slides.map((_, idx) => (
                             <div 
