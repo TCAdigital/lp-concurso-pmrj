@@ -683,7 +683,11 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="about-right">
-                        <h2 className="block-title light-text" style={{"color":"#0A1F2F"}}>QUEM É O PRATICAR ONLINE?</h2>
+                        <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '70px', width: 'auto', marginBottom: '25px', display: 'block' }} />
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                            <div style={{ width: '50px', height: '2px', background: 'var(--gold)', borderRadius: '2px' }}></div>
+                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0}}>QUEM É O PRATICAR ONLINE?</h2>
+                        </div>
                         <div className="about-text-content">
                             <p>Conduzimos concurseiros que estavam insatisfeitos com sua situação até conquistarem a tão sonhada aprovação e uma carreira mais estável através de iniciativa pública.</p>
                             <p>Nossa missão é transformar concurseiros em Policiais Militares. Com mais de 16 anos de mercado, já foram mais de <strong>15.000 alunos aprovados</strong> em concursos que abrangem a Polícia Militar (Soldado, Oficial) e Forças Armadas.</p>
