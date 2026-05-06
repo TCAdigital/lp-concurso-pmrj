@@ -125,8 +125,7 @@ export default function Page() {
             <div className="header-inner">
                 
                 <div className="brand">
-                    <span className="brand-top">PRATICAR<span className="dot">.</span></span>
-                    <span className="brand-bottom">ENSINO</span>
+                    <img src="assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
                 </div>
 
                 
