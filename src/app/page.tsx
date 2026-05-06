@@ -125,7 +125,7 @@ export default function Page() {
             <div className="header-inner">
                 
                 <div className="brand">
-                    <img src="assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
+                    <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
                 </div>
 
                 
@@ -162,7 +162,7 @@ export default function Page() {
             <div className="container">
                 <div className="hero-content-v4">
                     <div className="hero-title-group">
-                        <img src="assets/Logo_PMERJ_2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
+                        <img src="/assets/Logo_PMERJ_2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
                         <h1 className="hero-title-v4">
                             CONCURSO <br/>
                             <span className="main-name">PMERJ 2026:</span> <br/>
