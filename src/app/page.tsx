@@ -162,7 +162,7 @@ export default function Page() {
             <div className="container">
                 <div className="hero-content-v4">
                     <div className="hero-title-group">
-                        <img src="/assets/Logo_PMERJ_2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
+                        <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
                         <h1 className="hero-title-v4">
                             CONCURSO <br/>
                             <span className="main-name">PMERJ 2026:</span> <br/>
@@ -557,9 +557,62 @@ export default function Page() {
                             <div className="content-block">
                                 <h2 className="block-title light-text">QUEM PASSOU, RECOMENDA</h2>
                                 <div className="testimonials-video-grid">
-                                    <div className="video-placeholder-card"><div className="play-btn">▶</div><span>VER DEPOIMENTO</span></div>
-                                    <div className="video-placeholder-card"><div className="play-btn">▶</div><span>VER DEPOIMENTO</span></div>
-                                    <div className="video-placeholder-card"><div className="play-btn">▶</div><span>VER DEPOIMENTO</span></div>
+                                    <div className="video-placeholder-card" style={{ backgroundImage: "url('assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg')" }}>
+                                        <div className="play-content">
+                                            <div className="play-btn-new">
+                                                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                            </div>
+                                            <div className="play-text">
+                                                <strong>VER DEPOIMENTO</strong>
+                                                <span>(vídeo real)</span>
+                                            </div>
+                                        </div>
+                                        <div className="testimonial-footer">
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/police_officer_avatar_1_1777926214932.png')" }}></div>
+                                            <div className="t-info">
+                                                <strong>Marcos Oliveira</strong>
+                                                <span>Niterói • Aprovado PMERJ 2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="video-placeholder-card" style={{ backgroundImage: "url('assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg')" }}>
+                                        <div className="play-content">
+                                            <div className="play-btn-new">
+                                                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                            </div>
+                                            <div className="play-text">
+                                                <strong>VER DEPOIMENTO</strong>
+                                                <span>(vídeo real)</span>
+                                            </div>
+                                        </div>
+                                        <div className="testimonial-footer">
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/approved_student_1_1777926185091.png')" }}></div>
+                                            <div className="t-info">
+                                                <strong>Amanda Silva</strong>
+                                                <span>Rio de Janeiro • Aprovada PMERJ 2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="video-placeholder-card" style={{ backgroundImage: "url('assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a .jpg')" }}>
+                                        <div className="play-content">
+                                            <div className="play-btn-new">
+                                                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                            </div>
+                                            <div className="play-text">
+                                                <strong>VER DEPOIMENTO</strong>
+                                                <span>(vídeo real)</span>
+                                            </div>
+                                        </div>
+                                        <div className="testimonial-footer">
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/police_officer_avatar_2_1777926230005.png')" }}></div>
+                                            <div className="t-info">
+                                                <strong>Ricardo Santos</strong>
+                                                <span>Nova Iguaçu • Aprovado PMERJ 2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
