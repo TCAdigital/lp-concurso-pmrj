@@ -102,8 +102,11 @@ export default function Page() {
         }
       `}</style>
       
-      {/* SVG Gradients Definition */}
-      <svg width="0" height="0" style={{ position: 'absolute' }}>
+      {/* SVG Gradients Definition - Robust version for all browsers */}
+      <svg 
+        style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }} 
+        aria-hidden="true"
+      >
         <defs>
           <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#f4d03f" />
@@ -484,8 +487,9 @@ export default function Page() {
                                     <div className="bonus-premium-card">
                                         <div className="b-icon-box">
                                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                <line x1="8" y1="12" x2="16" y2="12"></line>
                                             </svg>
                                         </div>
                                         <div className="b-info-box">
