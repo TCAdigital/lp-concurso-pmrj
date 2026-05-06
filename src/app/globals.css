@@ -1523,6 +1523,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
 }
 
 .b-info-box { flex: 1; }

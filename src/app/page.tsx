@@ -482,7 +482,12 @@ export default function Page() {
                                 
                                 <div className="bonus-premium-list">
                                     <div className="bonus-premium-card">
-                                        <div className="b-icon-box">➕</div>
+                                        <div className="b-icon-box">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            </svg>
+                                        </div>
                                         <div className="b-info-box">
                                             <h3>MATEMÁTICA DO ZERO</h3>
                                             <p>Aprenda do básico ao avançado com o método focado em quem tem dificuldade.</p>
@@ -490,7 +495,12 @@ export default function Page() {
                                         </div>
                                     </div>
                                     <div className="bonus-premium-card">
-                                        <div className="b-icon-box">✍️</div>
+                                        <div className="b-icon-box">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                            </svg>
+                                        </div>
                                         <div className="b-info-box">
                                             <h3>REDAÇÃO NOTA MIL</h3>
                                             <p>O segredo da estrutura perfeita para garantir a pontuação máxima na sua prova.</p>
@@ -498,7 +508,12 @@ export default function Page() {
                                         </div>
                                     </div>
                                     <div className="bonus-premium-card">
-                                        <div className="b-icon-box">📚</div>
+                                        <div className="b-icon-box">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                            </svg>
+                                        </div>
                                         <div className="b-info-box">
                                             <h3>PORTUGUÊS PARA CONCURSOS</h3>
                                             <p>A base de tudo. Domine a gramática de forma tática e sem enrolação.</p>
@@ -506,7 +521,11 @@ export default function Page() {
                                         </div>
                                     </div>
                                     <div className="bonus-premium-card">
-                                        <div className="b-icon-box">🏆</div>
+                                        <div className="b-icon-box">
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                        </div>
                                         <div className="b-info-box">
                                             <h3>MENTORIAS EXCLUSIVAS</h3>
                                             <p>Encontros ao vivo com quem já passou para ajustar sua rota e mentalidade.</p>
