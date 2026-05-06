@@ -1625,6 +1625,21 @@ body {
     flex: 1;
 }
 
+.about-right-force-left {
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+.about-right-force-left .about-title-wrapper {
+    align-self: flex-start !important;
+}
+
+.about-right-force-left .block-title {
+    text-align: left !important;
+}
+
 .about-text-content p {
     color: #444;
 }

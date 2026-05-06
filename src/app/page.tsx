@@ -682,11 +682,11 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="about-right" style={{ textAlign: 'left !important', display: 'flex', flexDirection: 'column', alignItems: 'flex-start !important' }}>
+                    <div className="about-right about-right-force-left">
                         <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '105px', width: 'auto', marginBottom: '25px', display: 'block' }} />
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px', alignSelf: 'flex-start !important' }}>
+                        <div className="about-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
                             <div style={{ width: '50px', height: '2px', background: 'var(--gold)', borderRadius: '2px' }}></div>
-                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "textAlign": "left !important"}}>QUEM É O PRATICAR ONLINE?</h2>
+                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0}}>QUEM É O PRATICAR ONLINE?</h2>
                         </div>
                         <div className="about-text-content">
                             <p>Conduzimos concurseiros que estavam insatisfeitos com sua situação até conquistarem a tão sonhada aprovação e uma carreira mais estável através de iniciativa pública.</p>
