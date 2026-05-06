@@ -683,7 +683,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="about-right about-right-force-left">
-                        <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '105px', width: 'auto', marginBottom: '25px', display: 'block' }} />
+                        <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
                         <div className="about-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
                             <div style={{ width: '50px', height: '2px', background: 'var(--gold)', borderRadius: '2px' }}></div>
                             <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0}}>QUEM É O PRATICAR ONLINE?</h2>
