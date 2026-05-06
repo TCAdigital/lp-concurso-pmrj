@@ -301,7 +301,7 @@ body {
 }
 
 .hero-pmerj-logo {
-    width: 120px;
+    width: 160px;
     height: auto;
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1980,7 +1980,7 @@ body {
     .about-right h2 { font-size: 26px !important; margin-bottom: 20px !important; line-height: 1.2 !important; }
     .about-text-content p { font-size: 16px !important; line-height: 1.6 !important; margin-bottom: 15px !important; color: #444; }
     .about-right .cta-button-gold { margin: 10px auto 0 !important; width: 100%; max-width: 280px; }
-    .hero-pmerj-logo { width: 70px; margin-top: 0; }
+    .hero-pmerj-logo { width: 100px; margin-top: 0; }
     .hero-title-v4 .main-name { font-size: 38px !important; line-height: 1.1; }
     .hero-title-v4 .sub-name { font-size: 18px !important; margin-top: 10px; }
     .hero-lead-v4 { font-size: 16px; margin: 20px 0; position: relative; z-index: 10; }
