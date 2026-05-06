@@ -65,7 +65,7 @@ body {
 
 .header-inner {
     display: grid;
-    grid-template-columns: 200px 1fr 250px;
+    grid-template-columns: 300px 1fr 250px;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -186,7 +186,7 @@ body {
 }
 
 .brand-logo {
-    height: 75px;
+    height: 112px;
     width: auto;
     display: block;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
