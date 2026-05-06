@@ -8,6 +8,13 @@ export default function Page() {
   const [seconds, setSeconds] = useState("00");
   const [isStickyVisible, setIsStickyVisible] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    { bg: "/assets/hero_final_bg.jpg" },
+    { bg: "/assets/PMERJ-Banner-02.png" },
+    { bg: "/assets/PMERJ-Banner-03.png" }
+  ];
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -86,9 +93,14 @@ export default function Page() {
     const interval = setInterval(updateCountdown, 1000);
     updateCountdown();
 
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearInterval(interval);
+      clearInterval(slideInterval);
     };
   }, []);
 
@@ -157,7 +169,7 @@ export default function Page() {
 
     <main>
         
-        <section className="hero-v4">
+        <section className="hero-v4" style={{ backgroundImage: `url('${slides[currentSlide].bg}')`, transition: 'background-image 0.8s ease-in-out' }}>
             <div className="hero-bg-overlay"></div>
             <div className="container">
                 <div className="hero-content-v4">
@@ -245,6 +257,14 @@ export default function Page() {
                                 <span className="btn-sub">INVESTA NO SEU FUTURO. MUDE SUA HISTÓRIA.</span>
                             </div>
                         </a>
+                    <div className="slider-dots">
+                        {slides.map((_, idx) => (
+                            <div 
+                                key={idx} 
+                                className={`dot ${currentSlide === idx ? 'active' : ''}`}
+                                onClick={() => setCurrentSlide(idx)}
+                            ></div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -736,7 +756,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="about-right about-right-force-left">
-                        <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
+                        <img src="/assets/Logo-Praticar-Azul.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
                         <div className="about-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
                             <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0}}>QUEM É O PRATICAR ONLINE?</h2>
                         </div>

@@ -238,10 +238,11 @@ body {
     background-color: #050a12; /* Cor que casa com o fundo da imagem */
     background-image: url('/assets/hero_final_bg.jpg');
     background-repeat: no-repeat;
-    background-size: auto 100%; /* Mantém a altura real sem distorcer a largura */
-    background-position: right center;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     padding: 100px 0;
+    transition: background-image 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-v4 .hero-bg-overlay {
@@ -472,6 +473,35 @@ body {
 .btn-t { display: flex; flex-direction: column; line-height: 1.1; }
 .btn-t strong { font-size: 24px; font-weight: 900; letter-spacing: -0.5px; }
 .btn-t .btn-sub { font-size: 11px; font-weight: 800; opacity: 0.7; letter-spacing: 0.5px; margin-top: 4px; }
+
+/* SLIDER DOTS */
+.slider-dots {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+    justify-content: flex-start;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
 
 @media (max-width: 768px) {
     .container {
@@ -2019,6 +2049,11 @@ body {
     .anchoring-card { padding: 25px 15px; }
     .anchoring-value { font-size: 36px; }
     .anchoring-alert strong { font-size: 18px; }
+
+    .slider-dots {
+        justify-content: center;
+        margin-top: 30px;
+    }
 
     /* SIDEBAR CHECKOUT NO MOBILE */
     .split-sidebar-right { margin-top: 40px; }
