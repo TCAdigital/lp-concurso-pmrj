@@ -339,7 +339,14 @@ body {
     gap: 15px;
 }
 
-.s-icon { font-size: 32px; color: var(--gold); }
+.s-icon { 
+    font-size: 32px; 
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+}
 
 .s-text {
     display: flex;
