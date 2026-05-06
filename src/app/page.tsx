@@ -682,7 +682,7 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="about-right">
+                    <div className="about-right" style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                         <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" style={{ height: '70px', width: 'auto', marginBottom: '25px', display: 'block' }} />
                         <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
                             <div style={{ width: '50px', height: '2px', background: 'var(--gold)', borderRadius: '2px' }}></div>
