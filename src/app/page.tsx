@@ -164,8 +164,8 @@ export default function Page() {
                     <div className="hero-title-group">
                         <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
                         <h1 className="hero-title-v4">
-                            CONCURSO <br/>
-                            <span className="main-name">PMERJ 2026:</span> <br/>
+                            CONCURSO PMERJ <br/>
+                            <span className="main-name">SOLDADO E OFICIAL</span> <br/>
                             <span className="sub-name">MAIS DE <span className="highlight">2,1 MIL VAGAS</span> CONFIRMADAS!</span>
                         </h1>
                     </div>
