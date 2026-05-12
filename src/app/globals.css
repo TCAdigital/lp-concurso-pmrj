@@ -183,30 +183,20 @@ body {
 .brand {
     display: flex;
     align-items: center;
-    gap: 20px;
     padding: 0;
     margin: 0;
 }
 
 .brand-logo {
-    height: 80px;
+    height: 112px;
     width: auto;
     display: block;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
     transition: transform 0.3s ease;
 }
 
-.brand-divider {
-    width: 1px;
-    height: 40px;
-    background: rgba(212, 175, 55, 0.3);
-}
-
-.brand-logo-pmerj {
-    height: 70px;
-    width: auto;
-    display: block;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+.brand-logo:hover {
+    transform: scale(1.05);
 }
 
 .gold-strip {

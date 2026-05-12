@@ -138,8 +138,6 @@ export default function Page() {
                 
                 <div className="brand">
                     <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
-                    <div className="brand-divider"></div>
-                    <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="brand-logo-pmerj" />
                 </div>
 
                 
