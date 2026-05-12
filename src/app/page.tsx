@@ -737,7 +737,7 @@ export default function Page() {
         
         <section className="about-us-section" style={{"background":"#f9f9f9","padding":"100px 0"}}>
             <div className="container">
-                <div className="about-grid">
+                <div className="about-grid" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px' }}>
                     <div className="about-left">
                         <div className="about-image-container">
                             <img src="./assets/praticar-equipe.png" alt="Equipe Praticar Online" style={{"width":"100%","borderRadius":"20px","boxShadow":"0 20px 40px rgba(0,0,0,0.1)"}}/>
@@ -763,21 +763,27 @@ export default function Page() {
                             <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "textAlign": "left", "justifyContent": "flex-start", "width": "auto"}}>QUEM SOMOS E O QUE NOS MOVE</h2>
                             <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800 }}>Transformamos esforço em aprovação.</h3>
                         </div>
-                        <div className="about-text-content">
-                            <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares e integrantes das Forças Armadas para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
+                        <div className="about-text-content" style={{ color: '#0A1F2F' }}>
+                            <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px', color: '#0A1F2F' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares e integrantes das Forças Armadas para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
                             
                             <ul className="about-bullets" style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
-                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
-                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
-                                    <span>Já são mais de 15 mil alunos aprovados em concursos da Polícia Militar (Soldado e Oficial) e das Forças Armadas, formando uma trajetória marcada por excelência, comprometimento e transformação de vidas.</span>
+                                <li style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                                    <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                                    </div>
+                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Já são mais de 15 mil alunos aprovados em concursos da Polícia Militar (Soldado e Oficial) e das Forças Armadas, formando uma trajetória marcada por excelência, comprometimento e transformação de vidas.</span>
                                 </li>
-                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
-                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
-                                    <span>Nossa missão é guiar cada aluno desde o início da preparação até a conquista da aprovação, oferecendo acompanhamento, direcionamento e um método validado por milhares de aprovados.</span>
+                                <li style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                                    <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    </div>
+                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Nossa missão é guiar cada aluno desde o início da preparação até a conquista da aprovação, oferecendo acompanhamento, direcionamento e um método validado por milhares de aprovados.</span>
                                 </li>
-                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
-                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
-                                    <span>Se você quer acelerar sua evolução e estudar com quem realmente entende o caminho da aprovação, o Praticar está pronto para levar você ao próximo nível.</span>
+                                <li style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                                    <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                                    </div>
+                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Se você quer acelerar sua evolução e estudar com quem realmente entende o caminho da aprovação, o Praticar está pronto para levar você ao próximo nível.</span>
                                 </li>
                             </ul>
                             

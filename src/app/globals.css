@@ -1760,11 +1760,9 @@ body {
    ============================================================ */
 .about-grid {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 60px;
-}
-
-.about-left {
+}.about-left {
     flex: 1;
     position: relative;
 }
