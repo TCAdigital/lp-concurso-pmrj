@@ -9,11 +9,18 @@ export default function Page() {
   const [isStickyVisible, setIsStickyVisible] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentAboutSlide, setCurrentAboutSlide] = useState(0);
 
   const slides = [
     { bg: "/assets/hero_final_bg.jpg" },
     { bg: "/assets/PMERJ-Banner-02.png" },
     { bg: "/assets/PMERJ-Banner-03.png" }
+  ];
+
+  const aboutSlides = [
+    "/assets/hero_tactical_man_full_1777917381998.png",
+    "/assets/hero_female_officer_cammo_1777917641559.png",
+    "/assets/hero_goggles_guy_1777916752089.png"
   ];
 
   const toggleFaq = (index: number) => {
@@ -97,10 +104,15 @@ export default function Page() {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
 
+    const aboutSlideInterval = setInterval(() => {
+      setCurrentAboutSlide((prev) => (prev + 1) % aboutSlides.length);
+    }, 4000);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearInterval(interval);
       clearInterval(slideInterval);
+      clearInterval(aboutSlideInterval);
     };
   }, []);
 
@@ -739,8 +751,16 @@ export default function Page() {
             <div className="container">
                 <div className="about-grid" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px' }}>
                     <div className="about-left">
-                        <div className="about-image-container">
-                            <img src="./assets/praticar-equipe.png" alt="Equipe Praticar Online" style={{"width":"100%","borderRadius":"20px","boxShadow":"0 20px 40px rgba(0,0,0,0.1)"}}/>
+                        <div className="about-image-container about-slider">
+                            {aboutSlides.map((img, idx) => (
+                                <img 
+                                    key={idx}
+                                    src={img} 
+                                    alt={`Policial Praticar ${idx + 1}`} 
+                                    className={`about-slide-img ${currentAboutSlide === idx ? 'active' : ''}`}
+                                    style={{"width":"100%","borderRadius":"20px","boxShadow":"0 20px 40px rgba(0,0,0,0.1)", "position": idx === 0 ? "relative" : "absolute", "top": 0, "left": 0, "transition": "opacity 1s ease-in-out", "opacity": currentAboutSlide === idx ? 1 : 0, "zIndex": currentAboutSlide === idx ? 1 : 0}}
+                                />
+                            ))}
                             <div className="about-floating-card card-1" style={{"position":"absolute","bottom":"30px","left":"-30px","background":"#0A1F2F","color":"#fff","padding":"15px 20px","borderRadius":"10px","boxShadow":"0 10px 30px rgba(0,0,0,0.2)","zIndex":2,"borderLeft":"4px solid var(--gold)","display":"flex","alignItems":"center","gap":"15px"}}>
                                 <div style={{"fontSize":"24px"}}>🏆</div>
                                 <div>
