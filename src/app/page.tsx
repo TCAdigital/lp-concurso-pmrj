@@ -12,7 +12,7 @@ export default function Page() {
   const [currentAboutSlide, setCurrentAboutSlide] = useState(0);
 
   const slides = [
-    { bg: "/assets/hero_final_bg.jpg" },
+    { bg: "/assets/hero_final_bg_2.jpg" },
     { bg: "/assets/PMERJ-Banner-02.png" },
     { bg: "/assets/PMERJ-Banner-03.png" }
   ];
