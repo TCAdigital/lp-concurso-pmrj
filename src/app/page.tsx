@@ -138,6 +138,8 @@ export default function Page() {
                 
                 <div className="brand">
                     <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
+                    <div className="brand-divider"></div>
+                    <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="brand-logo-pmerj" />
                 </div>
 
                 
@@ -165,6 +167,7 @@ export default function Page() {
                 </div>
             </div>
         </div>
+        <div className="gold-strip"></div>
     </header>
 
     <main>
@@ -177,7 +180,7 @@ export default function Page() {
                         <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
                         <h1 className="hero-title-v4">
                             CONCURSO PMERJ <br/>
-                            <span className="main-name">SOLDADO E OFICIAL</span> <br/>
+                            <span className="main-name">SOLDADO</span> <br/>
                             <span className="sub-name">MAIS DE <span className="highlight">2,1 MIL VAGAS</span> CONFIRMADAS!</span>
                         </h1>
                     </div>
@@ -763,7 +766,7 @@ export default function Page() {
                         </div>
                         <div className="about-text-content">
                             <p>Conduzimos concurseiros que estavam insatisfeitos com sua situação até conquistarem a tão sonhada aprovação e uma carreira mais estável através de iniciativa pública.</p>
-                            <p>Nossa missão é transformar concurseiros em Policiais Militares. Com mais de 16 anos de mercado, já foram mais de <strong>15.000 alunos aprovados</strong> em concursos que abrangem a Polícia Militar (Soldado, Oficial) e Forças Armadas.</p>
+                            <p>Nossa missão é transformar concurseiros em Policiais Militares. Com mais de 16 anos de mercado, já foram mais de <strong>15.000 alunos aprovados</strong> em concursos que abrangem a Polícia Militar (Soldado) e Forças Armadas.</p>
                             <p>Se você quer acelerar a conquista da sua vaga e ter acesso ao método Praticar de ensino utilizado por esses milhares de aprovados, nós podemos te ajudar!</p>
                             
                             <a href="#" className="cta-button-gold">
