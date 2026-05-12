@@ -834,7 +834,7 @@ export default function Page() {
                 </div>
                 
                 <div className="f-copy">
-                    <p style={{ margin: 0, fontSize: '13px', opacity: 0.8 }}>© 2026 COMANDO PRATICAR. TODOS OS DIREITOS RESERVADOS.</p>
+                    <p style={{ margin: 0, fontSize: '13px', opacity: 0.8 }}>© 2026 Praticar Ensino. Todos os Direitos Reservados. O Segredo é Praticar!</p>
                 </div>
                 
                 <div className="f-links">
