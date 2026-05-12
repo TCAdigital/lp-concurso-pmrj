@@ -819,35 +819,39 @@ body {
     height: 3px;
     width: 100%;
     background: linear-gradient(90deg, #b8860b, #f4d03f, #d4af37, #f4d03f, #b8860b);
-    margin-bottom: 50px;
 }
 
 .footer-brands {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 30px;
 }
 
 .footer-logo {
-    height: 80px;
+    height: 60px;
     width: auto;
-    filter: brightness(0) invert(1); /* Deixar branco inicialmente ou manter cor? Usuário não especificou, mas footer costuma ser escuro */
 }
 
 .footer-logo-praticar {
-    height: 100px;
+    height: 70px;
 }
 
 .footer-logo-pmerj {
-    height: 90px;
+    height: 65px;
 }
 
 .footer-vertical-divider {
     width: 1px;
-    height: 60px;
+    height: 40px;
     background: rgba(212, 175, 55, 0.3);
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    gap: 40px;
 }
 
 .final-price {
