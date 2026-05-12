@@ -16,11 +16,10 @@ export default function Page() {
     { bg: "/assets/PMERJ-Banner-02.png" },
     { bg: "/assets/PMERJ-Banner-03.png" }
   ];
-
   const aboutSlides = [
-    "/assets/hero_tactical_man_full_1777917381998.png",
-    "/assets/hero_female_officer_cammo_1777917641559.png",
-    "/assets/hero_goggles_guy_1777916752089.png"
+    "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
+    "/assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
+    "/assets/approved_student_2_1777926200853.png"
   ];
 
   const toggleFaq = (index: number) => {
