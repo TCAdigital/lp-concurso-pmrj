@@ -759,17 +759,31 @@ export default function Page() {
                     </div>
                     <div className="about-right about-right-force-left">
                         <img src="/assets/Logo-Praticar-Azul.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
-                        <div className="about-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
-                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0}}>QUEM É O PRATICAR ONLINE?</h2>
+                        <div className="about-title-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '10px', marginBottom: '30px' }}>
+                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "textAlign": "left", "justifyContent": "flex-start", "width": "auto"}}>QUEM SOMOS E O QUE NOS MOVE</h2>
+                            <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800 }}>Transformamos esforço em aprovação.</h3>
                         </div>
                         <div className="about-text-content">
-                            <p>Conduzimos concurseiros que estavam insatisfeitos com sua situação até conquistarem a tão sonhada aprovação e uma carreira mais estável através de iniciativa pública.</p>
-                            <p>Nossa missão é transformar concurseiros em Policiais Militares. Com mais de 16 anos de mercado, já foram mais de <strong>15.000 alunos aprovados</strong> em concursos que abrangem a Polícia Militar (Soldado) e Forças Armadas.</p>
-                            <p>Se você quer acelerar a conquista da sua vaga e ter acesso ao método Praticar de ensino utilizado por esses milhares de aprovados, nós podemos te ajudar!</p>
+                            <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares e integrantes das Forças Armadas para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
                             
-                            <a href="#" className="cta-button-gold">
+                            <ul className="about-bullets" style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
+                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
+                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
+                                    <span>Já são mais de 15 mil alunos aprovados em concursos da Polícia Militar (Soldado e Oficial) e das Forças Armadas, formando uma trajetória marcada por excelência, comprometimento e transformação de vidas.</span>
+                                </li>
+                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
+                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
+                                    <span>Nossa missão é guiar cada aluno desde o início da preparação até a conquista da aprovação, oferecendo acompanhamento, direcionamento e um método validado por milhares de aprovados.</span>
+                                </li>
+                                <li style={{ marginBottom: '15px', display: 'flex', gap: '15px' }}>
+                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '20px' }}>•</span>
+                                    <span>Se você quer acelerar sua evolução e estudar com quem realmente entende o caminho da aprovação, o Praticar está pronto para levar você ao próximo nível.</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#oferta" className="cta-button-gold">
                                 <div className="cta-text">
-                                    <strong>SAIBA MAIS</strong>
+                                    <strong>QUERO MINHA VAGA</strong>
                                 </div>
                             </a>
                         </div>
