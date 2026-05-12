@@ -194,7 +194,7 @@ export default function Page() {
                         </h1>
                     </div>
                     
-                    <p className="hero-lead-v4">Prepare-se com quem já aprovou <span className="highlight">mais de 30 mil alunos!</span></p>
+                    <p className="hero-lead-v4">Prepare-se with quem já aprovou <span className="highlight">mais de 30 mil alunos!</span></p>
 
                     
                     <div className="social-proof-icons">
@@ -475,7 +475,17 @@ export default function Page() {
                         <div className="act-wrapper dark-zone">
                             
                             <div className="content-block">
-                                <h2 className="block-title">LÍDER ABSOLUTO EM APROVAÇÃO</h2>
+                                <h2 className="block-title title-left">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                        <path d="M4 22h16"></path>
+                                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                                    </svg>
+                                    LÍDER ABSOLUTO EM APROVAÇÃO
+                                </h2>
                                 <p className="block-lead">Há mais de 16 anos transformando civis em Policiais Militares no Estado do Rio de Janeiro.</p>
                                 <div className="stats-row-premium">
                                     <div className="stat-item-p"><span className="s-val">+15.000</span><span className="s-lab">APROVADOS</span></div>
@@ -498,7 +508,14 @@ export default function Page() {
 
                             
                             <div className="content-block">
-                                <h2 className="block-title">PLATAFORMA COMPLETA</h2>
+                                <h2 className="block-title title-left">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    PLATAFORMA COMPLETA
+                                </h2>
                                 <div className="features-elite-grid">
                                     <div className="feature-elite-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="m8 21 4-4 4 4"/><path d="m12 17v4"/></svg><span>AULAS GRAVADAS</span></div>
                                     <div className="feature-elite-card"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5"/><path d="M17 12v5a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-5"/><circle cx="12" cy="12" r="3"/></svg><span>AULAS AO VIVO</span></div>
@@ -802,7 +819,7 @@ export default function Page() {
                                     <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
                                     </div>
-                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Se você quer acelerar sua evolução e estudar com quem realmente entende o caminho da aprovação, o Praticar está pronto para levar você ao próximo nível.</span>
+                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Se você quer acelerar sua evolução e estudar with quem realmente entende o caminho da aprovação, o Praticar está pronto para levar você ao próximo nível.</span>
                                 </li>
                             </ul>
                             

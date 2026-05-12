@@ -419,13 +419,21 @@ body {
     width: 100%;
 }
 
+.block-title.title-left {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.block-title.title-left::before,
+.block-title.title-left::after {
+    display: none;
+}
+
 .block-title::before,
 .block-title::after {
     content: "";
     flex: 1;
     height: 1px;
-    background: linear-gradient(to var(--direction, right), transparent, var(--gold), transparent);
-    /* Se preferir uma linha sólida, use apenas: background: var(--gold); */
     background: var(--gold);
     opacity: 0.6;
 }
