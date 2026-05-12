@@ -815,6 +815,41 @@ body {
     font-weight: 900;
 }
 
+.footer-gold-strip {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #b8860b, #f4d03f, #d4af37, #f4d03f, #b8860b);
+    margin-bottom: 50px;
+}
+
+.footer-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Deixar branco inicialmente ou manter cor? Usuário não especificou, mas footer costuma ser escuro */
+}
+
+.footer-logo-praticar {
+    height: 100px;
+}
+
+.footer-logo-pmerj {
+    height: 90px;
+}
+
+.footer-vertical-divider {
+    width: 1px;
+    height: 60px;
+    background: rgba(212, 175, 55, 0.3);
+}
+
 .final-price {
     font-size: 32px;
     font-weight: 900;
@@ -2094,6 +2129,10 @@ body {
     .f-copy { order: 2; }
     .f-links { order: 3; align-items: center !important; text-align: center; }
     .f-links p { margin-top: 15px; }
+    
+    .footer-brands { flex-direction: column; gap: 20px; }
+    .footer-vertical-divider { width: 40px; height: 1px; }
+    .footer-gold-strip { margin-bottom: 30px; }
     /* TESTIMONIALS GRID MOBILE */
     .testimonials-video-grid {
         grid-template-columns: 1fr !important;
