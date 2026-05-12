@@ -13,8 +13,8 @@ export default function Page() {
 
   const slides = [
     { bg: "/assets/hero_final_bg_2.jpg" },
-    { bg: "/assets/PMERJ-Banner-02.png" },
-    { bg: "/assets/PMERJ-Banner-03.png" }
+    { bg: "/assets/hero_final_bg_3.jpg" },
+    { bg: "/assets/hero_final_bg_4.jpg" }
   ];
   const aboutSlides = [
     "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
