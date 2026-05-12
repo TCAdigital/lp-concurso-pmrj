@@ -1916,6 +1916,39 @@ body {
     50% { transform: translateY(calc(-50% - 10px)); }
 }
 
+.about-slide-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: opacity 1s ease-in-out;
+}
+
+.about-right-force-left {
+    padding-left: 0 !important;
+}
+
+.about-title-wrapper {
+    margin-left: 0 !important;
+}
+
+.about-title-wrapper h2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media (max-width: 992px) {
+    .about-slide-img {
+        height: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .about-slide-img {
+        height: 300px;
+    }
+}
+
 /* GALERIA INFINITA (MARQUEE) */
 .photo-marquee-section {
     padding: 40px 0 80px;

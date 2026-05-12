@@ -308,7 +308,7 @@ export default function Page() {
                         </h3>
 
                         <p className="urgency-footer">
-                            Se sua resposta for não, leia essa página com muita atenção antes de tomar qualquer decision!
+                            Se sua resposta for não, leia essa página com muita atenção antes de tomar qualquer decisão!
                         </p>
 
                         <div className="scroll-arrow">
@@ -750,14 +750,14 @@ export default function Page() {
             <div className="container">
                 <div className="about-grid" style={{ display: 'flex', alignItems: 'flex-start', gap: '60px' }}>
                     <div className="about-left">
-                        <div className="about-image-container about-slider">
+                        <div className="about-image-container about-slider" style={{ height: '550px', position: 'relative' }}>
                             {aboutSlides.map((img, idx) => (
                                 <img 
                                     key={idx}
                                     src={img} 
                                     alt={`Policial Praticar ${idx + 1}`} 
                                     className={`about-slide-img ${currentAboutSlide === idx ? 'active' : ''}`}
-                                    style={{"width":"100%","borderRadius":"20px","boxShadow":"0 20px 40px rgba(0,0,0,0.1)", "position": idx === 0 ? "relative" : "absolute", "top": 0, "left": 0, "transition": "opacity 1s ease-in-out", "opacity": currentAboutSlide === idx ? 1 : 0, "zIndex": currentAboutSlide === idx ? 1 : 0}}
+                                    style={{"position": "absolute", "top": 0, "left": 0, "opacity": currentAboutSlide === idx ? 1 : 0, "zIndex": currentAboutSlide === idx ? 1 : 0}}
                                 />
                             ))}
                             <div className="about-floating-card card-1" style={{"position":"absolute","bottom":"30px","left":"-30px","background":"#0A1F2F","color":"#fff","padding":"15px 20px","borderRadius":"10px","boxShadow":"0 10px 30px rgba(0,0,0,0.2)","zIndex":2,"borderLeft":"4px solid var(--gold)","display":"flex","alignItems":"center","gap":"15px"}}>
@@ -779,8 +779,8 @@ export default function Page() {
                     <div className="about-right about-right-force-left">
                         <img src="/assets/Logo-Praticar-Azul.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
                         <div className="about-title-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '10px', marginBottom: '30px' }}>
-                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "textAlign": "left", "justifyContent": "flex-start", "width": "auto"}}>QUEM SOMOS E O QUE NOS MOVE</h2>
-                            <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800 }}>Transformamos esforço em aprovação.</h3>
+                            <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "padding": 0, "textAlign": "left", "width": "100%"}}>QUEM SOMOS E O QUE NOS MOVE</h2>
+                            <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800, margin: 0, padding: 0 }}>Transformamos esforço em aprovação.</h3>
                         </div>
                         <div className="about-text-content" style={{ color: '#0A1F2F' }}>
                             <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px', color: '#0A1F2F' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares e integrantes das Forças Armadas para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
