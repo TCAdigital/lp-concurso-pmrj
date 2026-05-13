@@ -19,11 +19,11 @@ export default function Page() {
   const aboutSlides = [
     "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
     "/assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
-    "/assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (1).jpg"
+    "/assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg"
   ];
   const urgencySlides = [
     "/assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg",
-    "/assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a .jpg",
+    "/assets/Fotos/658051964_18518601910074757_302879703025276712_n.jpg",
     "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg"
   ];
   
@@ -260,15 +260,15 @@ export default function Page() {
                     <div className="offer-box-v4">
                         <div className="price-de">
                             <span>DE:</span>
-                            <span className="strike">R$ 2.497,00</span>
+                            <span className="strike">R$ 1.497,00</span>
                         </div>
                         <div className="price-por">
                             <span className="por-label">POR SOMENTE</span>
                             <div className="val-main">
                                 <span className="x">12x de</span>
-                                <span className="num">R$ 71,34</span>
+                                <span className="num">R$ 51,05</span>
                             </div>
-                            <div className="vista">OU À VISTA <span className="gold">R$ 997,00</span></div>
+                            <div className="vista">OU À VISTA <span className="gold">R$ 499,40</span></div>
                         </div>
                     </div>
 
@@ -497,9 +497,9 @@ export default function Page() {
                     <img src="assets/Fotos/629823992_18509564932074757_7278433390907907001_n.jpg" alt="Foto Praticar"/>
                     <img src="assets/Fotos/658051964_18518601910074757_302879703025276712_n.jpg" alt="Foto Praticar"/>
                     <img src="assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg" alt="Foto Praticar"/>
-                    <img src="assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (1).jpg" alt="Foto Praticar"/>
-                    <img src="assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (2).jpg" alt="Foto Praticar"/>
-                    <img src="assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a .jpg" alt="Foto Praticar"/>
+                    <img src="assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg" alt="Foto Praticar"/>
+                    <img src="assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg" alt="Foto Praticar"/>
+                    <img src="assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg" alt="Foto Praticar"/>
                     
                     <img src="assets/Fotos/583890465_18492940387074757_5208289860019613088_n.jpg" alt="Foto Praticar"/>
                     <img src="assets/Fotos/629823992_18509564932074757_7278433390907907001_n.jpg" alt="Foto Praticar"/>
@@ -541,15 +541,15 @@ export default function Page() {
                                     <div className="stat-item-p"><span className="s-val">+30.000</span><span className="s-lab">ALUNOS FORMADOS</span></div>
                                 </div>
                                 <div className="faces-grid">
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/police_officer_avatar_1_1777926214932.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/police_officer_avatar_2_1777926230005.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/approved_student_1_1777926185091.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (1).jpg')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_female_officer_cammo_1777917641559.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_goggles_guy_1777916752089.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_gold_tech_guy_1777916824446.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777926147393.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777925689276.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777923740206.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777923726135.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777923449009.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777922974532.png')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_tactical_man_full_1777917381998.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/police_officer_avatar_1_1777926214932.png')","filter":"hue-rotate(45deg)"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/media__1777926147393.png')","filter":"hue-rotate(45deg)"}}></div>
                                     <div className="face-circle more-count">+15k</div>
                                 </div>
                             </div>
@@ -676,7 +676,7 @@ export default function Page() {
                                             </div>
                                         </div>
                                         <div className="testimonial-footer">
-                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/police_officer_avatar_1_1777926214932.png')" }}></div>
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/media__1777926147393.png')" }}></div>
                                             <div className="t-info">
                                                 <strong>Marcos Oliveira</strong>
                                                 <span>Niterói • Aprovado PMERJ 2024</span>
@@ -695,7 +695,7 @@ export default function Page() {
                                             </div>
                                         </div>
                                         <div className="testimonial-footer">
-                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/approved_student_1_1777926185091.png')" }}></div>
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/media__1777923740206.png')" }}></div>
                                             <div className="t-info">
                                                 <strong>Amanda Silva</strong>
                                                 <span>Rio de Janeiro • Aprovada PMERJ 2024</span>
@@ -703,7 +703,7 @@ export default function Page() {
                                         </div>
                                     </div>
 
-                                    <div className="video-placeholder-card" style={{ backgroundImage: "url('assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a .jpg')" }}>
+                                    <div className="video-placeholder-card" style={{ backgroundImage: "url('assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg')" }}>
                                         <div className="play-content">
                                             <div className="play-btn-new">
                                                 <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -714,7 +714,7 @@ export default function Page() {
                                             </div>
                                         </div>
                                         <div className="testimonial-footer">
-                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/police_officer_avatar_2_1777926230005.png')" }}></div>
+                                            <div className="t-avatar" style={{ backgroundImage: "url('assets/media__1777925689276.png')" }}></div>
                                             <div className="t-info">
                                                 <strong>Ricardo Santos</strong>
                                                 <span>Nova Iguaçu • Aprovado PMERJ 2024</span>
@@ -781,13 +781,13 @@ export default function Page() {
                             <div className="badge-discount">CUPOM PM26 ATIVADO</div>
                             
                             <div className="price-original">
-                                <span>DE: R$ 2.497,00</span>
+                                <span>DE: R$ 1.497,00</span>
                                 <p>POR APENAS:</p>
                             </div>
 
                             <div className="price-installment">
                                 <span className="prefix">12x de</span>
-                                <span className="value">R$ 101,91</span>
+                                <span className="value">R$ 71,34</span>
                                 <span className="obs">*</span>
                             </div>
 
@@ -795,7 +795,7 @@ export default function Page() {
                                 <div className="coupon-label">USE O CUPOM: <strong>PM26</strong></div>
                                 <div className="coupon-applied">
                                     <span>VAI PAGAR APENAS</span>
-                                    <div className="final-price">12x de R$ 71,34<span>*</span></div>
+                                    <div className="final-price">12x de R$ 51,05<span>*</span></div>
                                 </div>
                             </div>
 
