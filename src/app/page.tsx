@@ -21,6 +21,13 @@ export default function Page() {
     "/assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
     "/assets/approved_student_2_1777926200853.png"
   ];
+  const urgencySlides = [
+    "/assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg",
+    "/assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a .jpg",
+    "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg"
+  ];
+  
+  const [currentUrgencySlide, setCurrentUrgencySlide] = useState(0);
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -107,11 +114,16 @@ export default function Page() {
       setCurrentAboutSlide((prev) => (prev + 1) % aboutSlides.length);
     }, 4000);
 
+    const urgencySlideInterval = setInterval(() => {
+      setCurrentUrgencySlide((prev) => (prev + 1) % urgencySlides.length);
+    }, 3500);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearInterval(interval);
       clearInterval(slideInterval);
       clearInterval(aboutSlideInterval);
+      clearInterval(urgencySlideInterval);
     };
   }, []);
 
@@ -167,7 +179,7 @@ export default function Page() {
 
                 
                 <div className="header-actions">
-                    <a href="#oferta" className={`btn-header-sticky ${isStickyVisible ? "visible" : ""}`}>
+                    <a href="https://pay.goexplosion.com/link/sdpmerj" className={`btn-header-sticky ${isStickyVisible ? "visible" : ""}`}>
                         <span>🔒</span> QUERO MINHA VAGA
                     </a>
                     <a href="https://instagram.com" className="social-icon" target="_blank">
@@ -262,7 +274,7 @@ export default function Page() {
 
                     
                     <div className="cta-wrapper-v4">
-                        <a href="#oferta" className="btn-yellow">
+                        <a href="https://pay.goexplosion.com/link/sdpmerj" className="btn-yellow">
                             <span className="lock">🔒</span>
                             <div className="btn-t">
                                 <strong>QUERO GARANTIR MINHA VAGA</strong>
@@ -288,33 +300,72 @@ export default function Page() {
             <div className="container">
                 <div className="urgency-wrapper">
                     
-                    <div className="urgency-image">
-                        <img src="assets/news_paper_pmerj_iminent.png" alt="Últimas Notícias PMERJ" className="paper-img"/>
+                    <div className="urgency-image-slider">
+                        {urgencySlides.map((img, idx) => (
+                            <div 
+                                key={idx}
+                                className={`urgency-slide ${currentUrgencySlide === idx ? 'active' : ''}`}
+                                style={{ backgroundImage: `url('${img}')` }}
+                            ></div>
+                        ))}
+                        <div className="slider-overlay"></div>
+                        <div className="slider-badge">
+                            <span className="badge-dot"></span> IMAGENS REAIS
+                        </div>
                     </div>
 
                     
                     <div className="urgency-content">
-                        <h2 className="urgency-title">O silêncio do edital é a sua maior armadilha...</h2>
+                        <div className="urgency-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            ATENÇÃO CANDIDATO
+                        </div>
+
+                        <h2 className="urgency-title">
+                            O silêncio do edital é a sua <br/>
+                            <span className="highlight-dark">MAIOR ARMADILHA...</span>
+                        </h2>
+                        
                         <p className="urgency-subtitle">
-                            Está iminente a publicação do <span className="highlight-dark">MELHOR CONCURSO DO ANO</span> para <span className="highlight-dark">SOLDADO DA PMERJ</span>.
+                            Está iminente a publicação do <strong>MELHOR CONCURSO DO ANO</strong> para <strong>SOLDADO DA PMERJ</strong>. Quem espera o edital sair para começar, já começa perdendo.
                         </p>
 
-                        <div className="question-highlight">
-                            <span>E A PERGUNTA É:</span>
+                        <div className="urgency-features">
+                            <div className="u-feature">
+                                <div className="u-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div className="u-text">
+                                    <strong>Tempo é o seu maior ativo</strong>
+                                    <span>Cada dia sem estudar é uma vaga a menos.</span>
+                                </div>
+                            </div>
+                            <div className="u-feature">
+                                <div className="u-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div className="u-text">
+                                    <strong>Preparação Blindada</strong>
+                                    <span>Antecipe-se à concorrência que está dormindo.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="question-highlight-v2">
+                            <div className="q-line"></div>
+                            <span>VOCÊ ESTÁ REALMENTE PRONTO?</span>
+                            <div className="q-line"></div>
                         </div>
 
                         <h3 className="urgency-question">
-                            VOCÊ VAI DEIXAR PASSAR MAIS UMA VEZ A CHANCE DE SE TORNAR O PRÓXIMO <span className="highlight-dark">POLICIAL MILITAR DO ESTADO DO RIO DE JANEIRO?</span>
+                            VOCÊ VAI DEIXAR PASSAR MAIS UMA VEZ A CHANCE DE SER <span className="highlight-dark">POLICIAL MILITAR?</span>
                         </h3>
 
-                        <p className="urgency-footer">
-                            Se sua resposta for não, leia essa página com muita atenção antes de tomar qualquer decisão!
-                        </p>
-
-                        <div className="scroll-arrow">
-                            <svg width="30" height="15" viewBox="0 0 30 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L15 13L29 1" stroke="#000" strokeWidth="2" strokeLinecap="round"/>
-                            </svg>
+                        <div className="scroll-indicator-v2">
+                            <p>Descubra como garantir sua farda abaixo</p>
+                            <div className="mouse-icon">
+                                <div className="wheel"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -751,13 +802,13 @@ export default function Page() {
                                 </div>
                             </div>
 
-                            <button className="cta-button-gold">
+                            <a href="https://pay.goexplosion.com/link/sdpmerj" className="cta-button-gold" style={{ textDecoration: 'none', display: 'flex', width: '100%' }}>
                                 <div className="cta-icon">🔒</div>
                                 <div className="cta-text">
                                     <strong>QUERO MINHA VAGA</strong>
                                     <span>GARANTA JÁ A SUA</span>
                                 </div>
-                            </button>
+                            </a>
 
                             <div className="card-footer-info">
                                 <p>VAGAS LIMITADAS! GARANTA JÁ A SUA.</p>
@@ -833,7 +884,7 @@ export default function Page() {
                                 </li>
                             </ul>
                             
-                            <a href="#oferta" className="cta-button-gold">
+                            <a href="https://pay.goexplosion.com/link/sdpmerj" className="cta-button-gold">
                                 <div className="cta-text">
                                     <strong>QUERO MINHA VAGA</strong>
                                 </div>
@@ -846,7 +897,7 @@ export default function Page() {
     </main>
 
     
-    <a href="https://wa.me/5521999999999" className="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5521995530773?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20curso%20PMERJ" className="whatsapp-float" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="#FFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .012 5.403.01 12.039a11.818 11.818 0 001.592 6.011L0 24l6.117-1.605a11.806 11.806 0 005.925 1.586h.005c6.634 0 12.038-5.402 12.04-12.039a11.791 11.791 0 00-3.535-8.503"/></svg>
     </a>
 
