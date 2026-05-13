@@ -297,75 +297,73 @@ export default function Page() {
 
         
         <section className="urgency-section">
-            <div className="container">
-                <div className="urgency-wrapper">
+            <div className="urgency-wrapper">
+                
+                <div className="urgency-image-slider">
+                    {urgencySlides.map((img, idx) => (
+                        <div 
+                            key={idx}
+                            className={`urgency-slide ${currentUrgencySlide === idx ? 'active' : ''}`}
+                            style={{ backgroundImage: `url('${img}')` }}
+                        ></div>
+                    ))}
+                    <div className="slider-overlay"></div>
+                    <div className="slider-badge">
+                        <span className="badge-dot"></span> IMAGENS REAIS
+                    </div>
+                </div>
+
+                
+                <div className="urgency-content">
+                    <div className="urgency-tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        ATENÇÃO CANDIDATO
+                    </div>
+
+                    <h2 className="urgency-title">
+                        O silêncio do edital é a sua <br/>
+                        <span className="highlight-dark">MAIOR ARMADILHA...</span>
+                    </h2>
                     
-                    <div className="urgency-image-slider">
-                        {urgencySlides.map((img, idx) => (
-                            <div 
-                                key={idx}
-                                className={`urgency-slide ${currentUrgencySlide === idx ? 'active' : ''}`}
-                                style={{ backgroundImage: `url('${img}')` }}
-                            ></div>
-                        ))}
-                        <div className="slider-overlay"></div>
-                        <div className="slider-badge">
-                            <span className="badge-dot"></span> IMAGENS REAIS
+                    <p className="urgency-subtitle">
+                        Está iminente a publicação do <strong>MELHOR CONCURSO DO ANO</strong> para <strong>SOLDADO DA PMERJ</strong>. Quem espera o edital sair para começar, já começa perdendo.
+                    </p>
+
+                    <div className="urgency-features">
+                        <div className="u-feature">
+                            <div className="u-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div className="u-text">
+                                <strong>Tempo é o seu maior ativo</strong>
+                                <span>Cada dia sem estudar é uma vaga a menos.</span>
+                            </div>
+                        </div>
+                        <div className="u-feature">
+                            <div className="u-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div className="u-text">
+                                <strong>Preparação Blindada</strong>
+                                <span>Antecipe-se à concorrência que está dormindo.</span>
+                            </div>
                         </div>
                     </div>
 
-                    
-                    <div className="urgency-content">
-                        <div className="urgency-tag">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                            ATENÇÃO CANDIDATO
-                        </div>
+                    <div className="question-highlight-v2">
+                        <div className="q-line"></div>
+                        <span>VOCÊ ESTÁ REALMENTE PRONTO?</span>
+                        <div className="q-line"></div>
+                    </div>
 
-                        <h2 className="urgency-title">
-                            O silêncio do edital é a sua <br/>
-                            <span className="highlight-dark">MAIOR ARMADILHA...</span>
-                        </h2>
-                        
-                        <p className="urgency-subtitle">
-                            Está iminente a publicação do <strong>MELHOR CONCURSO DO ANO</strong> para <strong>SOLDADO DA PMERJ</strong>. Quem espera o edital sair para começar, já começa perdendo.
-                        </p>
+                    <h3 className="urgency-question">
+                        VOCÊ VAI DEIXAR PASSAR MAIS UMA VEZ A CHANCE DE SER <span className="highlight-dark">POLICIAL MILITAR?</span>
+                    </h3>
 
-                        <div className="urgency-features">
-                            <div className="u-feature">
-                                <div className="u-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                </div>
-                                <div className="u-text">
-                                    <strong>Tempo é o seu maior ativo</strong>
-                                    <span>Cada dia sem estudar é uma vaga a menos.</span>
-                                </div>
-                            </div>
-                            <div className="u-feature">
-                                <div className="u-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                                </div>
-                                <div className="u-text">
-                                    <strong>Preparação Blindada</strong>
-                                    <span>Antecipe-se à concorrência que está dormindo.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="question-highlight-v2">
-                            <div className="q-line"></div>
-                            <span>VOCÊ ESTÁ REALMENTE PRONTO?</span>
-                            <div className="q-line"></div>
-                        </div>
-
-                        <h3 className="urgency-question">
-                            VOCÊ VAI DEIXAR PASSAR MAIS UMA VEZ A CHANCE DE SER <span className="highlight-dark">POLICIAL MILITAR?</span>
-                        </h3>
-
-                        <div className="scroll-indicator-v2">
-                            <p>Descubra como garantir sua farda abaixo</p>
-                            <div className="mouse-icon">
-                                <div className="wheel"></div>
-                            </div>
+                    <div className="scroll-indicator-v2">
+                        <p>Descubra como garantir sua farda abaixo</p>
+                        <div className="mouse-icon">
+                            <div className="wheel"></div>
                         </div>
                     </div>
                 </div>
