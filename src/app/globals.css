@@ -2365,61 +2365,78 @@ body {
         margin-inline: 0;
     }
 
-    /* QUEM SOMOS MOBILE - CENTRALIZAÇÃO E VISIBILIDADE */
+    /* QUEM SOMOS MOBILE - REFINAMENTO ESTREITO */
     .about-us-section {
-        padding: 60px 0 !important;
+        padding: 40px 0 !important;
         background: #fff !important;
     }
     .about-grid {
         flex-direction: column !important;
-        gap: 40px !important;
-    }
-    .about-left {
-        order: 2; /* Imagem abaixo do texto no mobile */
-        width: 100% !important;
+        gap: 30px !important;
     }
     .about-right {
         order: 1;
         width: 100% !important;
-        text-align: center !important;
+        text-align: left !important; /* Padrão volta a ser esquerda */
         display: flex !important;
         flex-direction: column !important;
-        align-items: center !important;
+        align-items: flex-start !important;
     }
-    .about-right .block-title {
-        text-align: center !important;
-        margin: 0 auto 15px !important;
-        padding: 0 !important;
-        width: 100% !important;
-    }
+    /* APENAS ESTES FICAM CENTRALIZADOS */
+    .about-right img, 
+    .about-right .block-title, 
     .about-right h3 {
-        text-align: center !important;
-        margin: 0 auto 20px !important;
-    }
-    .about-text-content p {
+        align-self: center !important;
         text-align: center !important;
         margin-inline: auto !important;
     }
+    .about-right .block-title {
+        font-size: 28px !important;
+        letter-spacing: normal !important; /* Mata o espaçamento estranho */
+        margin-bottom: 10px !important;
+        padding: 0 !important;
+    }
+    .about-right h3 {
+        font-size: 20px !important;
+        margin-bottom: 25px !important;
+    }
+    /* PARÁGRAFOS VOLTAM PARA A ESQUERDA */
+    .about-text-content p,
+    .about-bullets li {
+        text-align: left !important;
+        align-self: flex-start !important;
+        margin-inline: 0 !important;
+    }
+    .about-bullets li {
+        display: flex !important;
+        gap: 15px !important;
+        width: 100%;
+    }
+
+    .about-left {
+        order: 2;
+        width: 100% !important;
+        padding: 0 10px !important;
+    }
     .about-image-container.about-slider {
         height: auto !important;
-        min-height: auto !important;
+        min-height: auto !important; /* Mata o vácuo branco */
         display: flex !important;
         flex-direction: column !important;
-        gap: 15px !important;
+        gap: 10px !important;
     }
     .about-slide-img {
         position: relative !important;
         opacity: 1 !important;
         display: block !important;
         width: 100% !important;
-        height: 300px !important;
+        height: auto !important;
+        max-height: 350px;
         object-fit: cover !important;
-        border-radius: 15px !important;
+        border-radius: 12px !important;
         z-index: 1 !important;
     }
-    .about-floating-card {
-        display: none !important; /* Esconde cards flutuantes no mobile para limpar o visual */
-    }
+    .about-floating-card { display: none !important; }
 
     /* TRIO DE FOTOS - CORREÇÃO DEFINITIVA (MATA VÁCUO BRANCO) */
     .stages-section {
