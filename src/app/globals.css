@@ -2352,26 +2352,82 @@ body {
     .split-sidebar-right { margin-top: 40px; }
     .sticky-checkout-card { position: static !important; width: 100% !important; box-shadow: none; border: 2px solid var(--gold); }
 
-    /* CENTRALIZAÇÃO DE BÔNUS NO MOBILE */
+    /* REVERTER BÔNUS PARA ESQUERDA */
     .bonus-header-mini {
-        text-align: center !important;
+        text-align: left !important;
         margin-bottom: 30px;
     }
     .bonus-label {
-        margin-inline: auto;
+        margin-inline: 0;
     }
     .bonus-header-mini .block-title {
+        text-align: left !important;
+        margin-inline: 0;
+    }
+
+    /* QUEM SOMOS MOBILE - CENTRALIZAÇÃO E VISIBILIDADE */
+    .about-us-section {
+        padding: 60px 0 !important;
+        background: #fff !important;
+    }
+    .about-grid {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    .about-left {
+        order: 2; /* Imagem abaixo do texto no mobile */
+        width: 100% !important;
+    }
+    .about-right {
+        order: 1;
+        width: 100% !important;
         text-align: center !important;
-        margin-inline: auto;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .about-right .block-title {
+        text-align: center !important;
+        margin: 0 auto 15px !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    .about-right h3 {
+        text-align: center !important;
+        margin: 0 auto 20px !important;
+    }
+    .about-text-content p {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+    .about-image-container.about-slider {
+        height: auto !important;
+        min-height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    .about-slide-img {
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: cover !important;
+        border-radius: 15px !important;
+        z-index: 1 !important;
+    }
+    .about-floating-card {
+        display: none !important; /* Esconde cards flutuantes no mobile para limpar o visual */
     }
 
     /* TRIO DE FOTOS - CORREÇÃO DEFINITIVA (MATA VÁCUO BRANCO) */
     .stages-section {
-        padding: 40px 0 !important; /* Reduz padding para não criar buraco */
+        padding: 40px 0 !important; 
     }
     .stages-visual-cascade { 
         height: auto !important; 
-        min-height: 200px; /* Garante que o container exista */
+        min-height: 200px;
         margin: 20px auto 30px !important; 
         width: 100% !important; 
         display: flex !important; 
