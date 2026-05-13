@@ -2348,27 +2348,38 @@ body {
     .split-sidebar-right { margin-top: 40px; }
     .sticky-checkout-card { position: static !important; width: 100% !important; box-shadow: none; border: 2px solid var(--gold); }
 
-    /* TRIO DE FOTOS */
-    .stages-visual-cascade { height: 350px; margin: 20px auto; width: 100%; display: flex; justify-content: center; }
-    .cascade-img { height: 180px; width: 70%; position: absolute; }
-
-    /* ABOUT US FLOAT CARDS */
-    .about-floating-card { 
-        position: relative !important; top: auto !important; left: auto !important; right: auto !important;
-        transform: none !important; width: 100% !important; margin-bottom: 10px;
-        background: #0A1F2F !important;
+    /* TRIO DE FOTOS - CORREÇÃO DEFINITIVA */
+    .stages-visual-cascade { 
+        height: auto !important; 
+        margin: 30px auto !important; 
+        width: 100% !important; 
+        display: flex !important; 
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+    .cascade-img { 
+        position: relative !important; 
+        height: auto !important; 
+        width: 90% !important; 
+        max-width: 400px;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    /* FOOTER CLEAN MOBILE */
+    /* FOOTER CLEAN MOBILE CENTRALIZADO */
     .tactical-footer { padding: 40px 0; text-align: center; }
-    .footer-inner { flex-direction: column; gap: 30px; }
-    .f-copy { order: 2; }
-    .f-links { order: 3; align-items: center !important; text-align: center; }
-    .f-links p { margin-top: 15px; }
+    .footer-inner { flex-direction: column !important; align-items: center !important; gap: 30px; }
+    .footer-brands { flex-direction: column !important; align-items: center !important; gap: 20px; }
+    .footer-vertical-divider { width: 40px; height: 1px; margin: 10px 0; }
     
-    .footer-brands { flex-direction: column; gap: 20px; }
-    .footer-vertical-divider { width: 40px; height: 1px; }
-    .footer-gold-strip { margin-bottom: 30px; }
+    .f-copy { order: 3; }
+    .f-links { order: 2; display: flex; flex-direction: column; align-items: center !important; gap: 10px; }
+    .f-links span { margin: 0; }
+    
     /* TESTIMONIALS GRID MOBILE */
     .testimonials-video-grid {
         grid-template-columns: 1fr !important;
