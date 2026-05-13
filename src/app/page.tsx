@@ -19,7 +19,7 @@ export default function Page() {
   const aboutSlides = [
     "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
     "/assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
-    "/assets/approved_student_2_1777926200853.png"
+    "/assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (1).jpg"
   ];
   const urgencySlides = [
     "/assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg",
@@ -182,7 +182,7 @@ export default function Page() {
                     <a href="https://pay.goexplosion.com/link/sdpmerj" className={`btn-header-sticky ${isStickyVisible ? "visible" : ""}`}>
                         <span>🔒</span> QUERO MINHA VAGA
                     </a>
-                    <a href="https://instagram.com" className="social-icon" target="_blank">
+                    <a href="https://www.instagram.com/praticar.ensino/" className="social-icon" target="_blank">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     </a>
                 </div>
@@ -544,7 +544,7 @@ export default function Page() {
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/police_officer_avatar_1_1777926214932.png')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/police_officer_avatar_2_1777926230005.png')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/approved_student_1_1777926185091.png')"}}></div>
-                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/approved_student_2_1777926200853.png')"}}></div>
+                                    <div className="face-circle" style={{"backgroundImage":"url('./assets/Fotos/Ela transformou cada desafio em conquista e cada limite em superação.Entre dezenas de homens, a  (1).jpg')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_female_officer_cammo_1777917641559.png')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_goggles_guy_1777916752089.png')"}}></div>
                                     <div className="face-circle" style={{"backgroundImage":"url('./assets/hero_gold_tech_guy_1777916824446.png')"}}></div>
@@ -846,7 +846,7 @@ export default function Page() {
                                 <div style={{"background":"rgba(212,175,55,0.2)","color":"var(--gold)","width":"40px","height":"40px","borderRadius":"50%","display":"flex","alignItems":"center","justifyContent":"center","fontWeight":900}}>+15k</div>
                                 <div>
                                     <strong style={{"display":"block","fontSize":"16px"}}>Aprovados</strong>
-                                    <span style={{"fontSize":"12px","color":"#666"}}>Na PMERJ e Forças Armadas</span>
+                                    <span style={{"fontSize":"12px","color":"#666"}}>Na Polícia Militar</span>
                                 </div>
                             </div>
                         </div>
@@ -858,14 +858,14 @@ export default function Page() {
                             <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800, margin: 0, padding: 0 }}>Transformamos esforço em aprovação.</h3>
                         </div>
                         <div className="about-text-content" style={{ color: '#0A1F2F' }}>
-                            <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px', color: '#0A1F2F' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares e integrantes das Forças Armadas para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
+                            <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '25px', color: '#0A1F2F' }}>Há mais de 16 anos, o Praticar prepara futuros Policiais Militares para conquistarem sua vaga através de um método de ensino estratégico, disciplinado e focado em resultados reais.</p>
                             
                             <ul className="about-bullets" style={{ listStyle: 'none', padding: 0, margin: '0 0 30px 0' }}>
                                 <li style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                                     <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
                                     </div>
-                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Já são mais de 15 mil alunos aprovados em concursos da Polícia Militar (Soldado e Oficial) e das Forças Armadas, formando uma trajetória marcada por excelência, comprometimento e transformação de vidas.</span>
+                                    <span style={{ fontSize: '16px', lineHeight: '1.5', color: '#333' }}>Já são mais de 15 mil alunos aprovados em concursos da Polícia Militar (Soldado e Oficial), formando uma trajetória marcada por excelência, comprometimento e transformação de vidas.</span>
                                 </li>
                                 <li style={{ marginBottom: '20px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                                     <div style={{ minWidth: '40px', height: '40px', background: 'rgba(212,175,55,0.1)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', padding: '8px' }}>
