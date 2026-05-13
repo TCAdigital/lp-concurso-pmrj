@@ -321,8 +321,7 @@ export default function Page() {
                     </div>
 
                     <h2 className="urgency-title">
-                        O silêncio do edital é a sua <br/>
-                        <span className="highlight-dark">MAIOR ARMADILHA...</span>
+                        O silêncio do edital é a sua <span className="highlight-dark">MAIOR ARMADILHA...</span>
                     </h2>
                     
                     <p className="urgency-subtitle">

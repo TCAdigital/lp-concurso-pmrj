@@ -753,19 +753,30 @@ body {
 @media (max-width: 768px) {
     .urgency-section { 
         background: #fff; 
-        padding: 40px 15px; /* Espaço para o arredondamento aparecer */
+        padding: 0; /* Removido padding para a imagem preencher tudo */
     }
     .urgency-wrapper {
         grid-template-columns: 1fr;
         min-height: auto;
-        border-radius: 24px; /* Arredondado no mobile */
-        overflow: hidden;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 0; /* Removido arredondamento para preencher a tela */
+        width: 100vw;
+        margin: 0;
+        left: 0;
+        right: 0;
     }
-    .urgency-image-slider { height: 350px; min-height: 350px; }
-    .urgency-content { padding: 40px 20px; text-align: center; }
+    .urgency-image-slider { 
+        height: 400px; 
+        min-height: 400px; 
+    }
+    .urgency-content { 
+        padding: 50px 20px; 
+        text-align: center; 
+    }
     .urgency-tag { justify-content: center; }
+    .urgency-title { 
+        font-size: 32px; /* Reduzido para não quebrar feio */
+        padding: 0 10px;
+    }
     .urgency-subtitle, .urgency-question, .question-highlight-v2 { max-width: 100%; margin-inline: auto; }
     .u-feature { text-align: left; }
     .question-highlight-v2 { justify-content: center; }
@@ -1393,17 +1404,18 @@ body {
 
 @media (max-width: 992px) {
     .stages-visual-cascade {
-        height: 450px;
-        max-width: 450px;
-        margin: 40px auto;
+        height: 400px;
+        max-width: 100%;
+        margin: 20px auto 40px;
+        order: 2;
     }
     .cascade-img {
-        width: 75%;
-        height: 200px;
+        width: 70%;
+        height: 180px;
     }
-    .img-casc-1 { top: 0; left: 0; }
-    .img-casc-2 { top: 20%; right: 0; }
-    .img-casc-3 { bottom: 0; left: 10%; width: 80%; }
+    .img-casc-1 { top: 0; left: 0; z-index: 3; }
+    .img-casc-2 { top: 15%; right: 0; z-index: 2; }
+    .img-casc-3 { bottom: 0; left: 10%; width: 80%; z-index: 1; }
 }
 
 .stats-box {
@@ -1479,7 +1491,7 @@ body {
         text-align: center;
     }
     
-    .stages-visual { order: 2; }
+    .stages-visual-cascade { order: 2; }
     .stages-info { order: 1; }
     
     .stats-box { border-left: none; border-top: 5px solid var(--gold); border-radius: 8px; }
