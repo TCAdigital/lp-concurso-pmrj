@@ -206,7 +206,7 @@ export default function Page() {
                         </h1>
                     </div>
                     
-                    <p className="hero-lead-v4">Prepare-se with quem já aprovou <span className="highlight">mais de 30 mil alunos!</span></p>
+                    <p className="hero-lead-v4">Estude com quem já ajudou <span className="highlight">mais de 30 mil alunos a conquistar a aprovação!</span></p>
 
                     
                     <div className="social-proof-icons">
