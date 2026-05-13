@@ -2070,6 +2070,7 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    text-align: left; /* Garante alinhamento à esquerda */
 }
 
 .faq-q span {
@@ -2077,6 +2078,8 @@ body {
     font-weight: 800;
     color: #0A1F2F;
     font-family: var(--font-brutal);
+    flex: 1; /* Ocupa o espaço para o texto não sambar */
+    padding-right: 15px;
 }
 
 .faq-icon {
@@ -2089,6 +2092,7 @@ body {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid rgba(0,0,0,0.05);
+    text-align: left; /* Garante alinhamento à esquerda */
 }
 
 .faq-a p {
@@ -2348,26 +2352,47 @@ body {
     .split-sidebar-right { margin-top: 40px; }
     .sticky-checkout-card { position: static !important; width: 100% !important; box-shadow: none; border: 2px solid var(--gold); }
 
-    /* TRIO DE FOTOS - CORREÇÃO DEFINITIVA */
+    /* CENTRALIZAÇÃO DE BÔNUS NO MOBILE */
+    .bonus-header-mini {
+        text-align: center !important;
+        margin-bottom: 30px;
+    }
+    .bonus-label {
+        margin-inline: auto;
+    }
+    .bonus-header-mini .block-title {
+        text-align: center !important;
+        margin-inline: auto;
+    }
+
+    /* TRIO DE FOTOS - CORREÇÃO DEFINITIVA (MATA VÁCUO BRANCO) */
+    .stages-section {
+        padding: 40px 0 !important; /* Reduz padding para não criar buraco */
+    }
     .stages-visual-cascade { 
         height: auto !important; 
-        margin: 30px auto !important; 
+        min-height: 200px; /* Garante que o container exista */
+        margin: 20px auto 30px !important; 
         width: 100% !important; 
         display: flex !important; 
         flex-direction: column !important;
         align-items: center !important;
-        gap: 20px !important;
+        gap: 15px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     .cascade-img { 
         position: relative !important; 
+        display: block !important;
         height: auto !important; 
-        width: 90% !important; 
-        max-width: 400px;
+        width: 85% !important; 
+        max-width: 350px;
         transform: none !important;
         left: auto !important;
         top: auto !important;
         border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border: 2px solid #fff !important;
     }
 
     /* FOOTER CLEAN MOBILE CENTRALIZADO */
