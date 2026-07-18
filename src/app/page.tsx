@@ -12,19 +12,19 @@ export default function Page() {
   const [currentAboutSlide, setCurrentAboutSlide] = useState(0);
 
   const slides = [
-    { bg: "/assets/hero_final_bg_2.jpg" },
-    { bg: "/assets/hero_final_bg_3.jpg" },
-    { bg: "/assets/hero_final_bg_4.jpg" }
+    { bg: "./assets/hero_final_bg_2.jpg" },
+    { bg: "./assets/hero_final_bg_3.jpg" },
+    { bg: "./assets/hero_final_bg_4.jpg" }
   ];
   const aboutSlides = [
-    "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
-    "/assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
-    "/assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg"
+    "./assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg",
+    "./assets/Fotos/499552409_18461190649074757_2972682659379787270_n.jpg",
+    "./assets/Fotos/514588928_18468510796074757_8241474929357435814_n.jpg"
   ];
   const urgencySlides = [
-    "/assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg",
-    "/assets/Fotos/658051964_18518601910074757_302879703025276712_n.jpg",
-    "/assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg"
+    "./assets/Fotos/464222777_18425346595074757_3604659167413517835_n.jpg",
+    "./assets/Fotos/658051964_18518601910074757_302879703025276712_n.jpg",
+    "./assets/Fotos/671235803_18524025637074757_3015869201045570705_n.jpg"
   ];
   
   const [currentUrgencySlide, setCurrentUrgencySlide] = useState(0);
@@ -160,7 +160,7 @@ export default function Page() {
             <div className="header-inner">
                 
                 <div className="brand">
-                    <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
+                    <img src="./assets/Logo_Praticar-Colegio-Curso.png" alt="Praticar Ensino Logo" className="brand-logo" />
                 </div>
 
                 
@@ -198,7 +198,7 @@ export default function Page() {
             <div className="container">
                 <div className="hero-content-v4">
                     <div className="hero-title-group">
-                        <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
+                        <img src="./assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="hero-pmerj-logo"/>
                         <h1 className="hero-title-v4">
                             CONCURSO PMERJ <br/>
                             <span className="main-name">SOLDADO</span> <br/>
@@ -852,7 +852,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="about-right about-right-force-left">
-                        <img src="/assets/Logo-Praticar-Azul.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
+                        <img src="./assets/Logo-Praticar-Azul.png" alt="Logo Praticar" style={{ height: '158px', width: 'auto', marginBottom: '25px', display: 'block' }} />
                         <div className="about-title-wrapper" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '10px', marginBottom: '30px' }}>
                             <h2 className="block-title light-text" style={{"color":"#0A1F2F", "margin": 0, "padding": 0, "textAlign": "left", "width": "100%"}}>QUEM SOMOS E O QUE NOS MOVE</h2>
                             <h3 style={{ fontSize: '24px', color: 'var(--gold)', fontWeight: 800, margin: 0, padding: 0 }}>Transformamos esforço em aprovação.</h3>
@@ -903,9 +903,9 @@ export default function Page() {
         <div className="container">
             <div className="footer-inner">
                 <div className="footer-brands">
-                    <img src="/assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" className="footer-logo footer-logo-praticar" />
+                    <img src="./assets/Logo_Praticar-Colegio-Curso.png" alt="Logo Praticar" className="footer-logo footer-logo-praticar" />
                     <div className="footer-vertical-divider"></div>
-                    <img src="/assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="footer-logo footer-logo-pmerj" />
+                    <img src="./assets/Logotipo-Dourado-PMERJ-2026.png" alt="Logo PMERJ" className="footer-logo footer-logo-pmerj" />
                 </div>
                 
                 <div className="f-copy">
